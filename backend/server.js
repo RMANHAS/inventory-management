@@ -10,7 +10,9 @@ const itemRoutes = require("./routes/itemRoutes");
 const app = express();
 
 app.use(cors({
-  origin: "*" // or your frontend URL
+  origin: "https://frontend-tau-two-t7wdr2wdq5.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 app.use(express.json());
 
