@@ -8,7 +8,7 @@ const categoryRoutes = require("./routes/categoryRoutes");
 const itemRoutes = require("./routes/itemRoutes");
 
 const app = express();
-const cors = require("cors");
+
 app.use(cors({
   origin: "*" // or your frontend URL
 }));
